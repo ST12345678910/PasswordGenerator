@@ -4,3 +4,5 @@
  a random password with between 8-128 characters, and a
  combination of potential lowercase characters, uppercase
  characters, numbers, and/or special characters. 
+
+ ![alt text](https://github.com/[st12345678910]/[PasswordGenerator]/assets/demopic.png?raw=true)

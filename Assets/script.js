@@ -140,7 +140,7 @@ copy.addEventListener("click", () => {
     passwordSelect();
   });
 
-  // tells the user that their password has been highlighted
+  // tells the user that their password has been
 function passwordSelect() {
   document.getElementById("password").select();
   document.execCommand("select");
