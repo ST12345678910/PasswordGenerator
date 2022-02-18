@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+  <!-- The space in which the generator,buttons, and final password are seen -->
   <div class="wrapper">
     <header>
       <h1>Password Generator</h1>
@@ -19,17 +21,25 @@
       <div class="card-header">
         <h2>Generated Password &#9196;</h2>
       </div>
+
+      <!-- the area where the password will appear -->
       <div class="card-body">
         <textarea readonly id="password" placeholder="-Your Randomized Password-" aria-label="Generated Password"></textarea>
       </div>
       <div class="card-footer">
+
+        <!-- button used to start generation process -->
         <button id="generate" class="btn">Generate Password</button>
+
+        <!-- button used to highlight/select generated password -->
         <button id="select" class ="btn1">Highlight/Select All</button>
       </div>
     </div>
   </div>
   <script src="assets/script.js"></script>
   <script>
+    
+    // tell the user how to begin, they see this before the page
     $("document").ready(function () {
       alert("Press 'Generate Password' to begin:");
     }); 
