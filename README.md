@@ -5,4 +5,4 @@
  combination of potential lowercase characters, uppercase
  characters, numbers, and/or special characters. 
 
- ![alt text](https://github.com/[st12345678910]/[PasswordGenerator]/assets/demopic.png?raw=true)
+ ![alt text](https://github.com/[st12345678910]/[PasswordGenerator]/blob/[assets]/image.jpg?raw=true)
