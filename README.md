@@ -5,5 +5,5 @@
  combination of potential lowercase characters, uppercase
  characters, numbers, and/or special characters. 
  
-![PasswordGenerator](assets/demopic.png)
+![PasswordGenerator](Assets/demopic.png)
 
