@@ -20,7 +20,7 @@ body {
   font-family: sans-serif;
   background: linear-gradient(-90deg, orange, pink, rgb(112, 214, 112), aqua);
   background-size: 500% 500%;
-  animation: gradient 4s ease-in-out infinite;
+  animation: gradient 7s ease-in-out infinite;
 }
 
 /* keyframes below specify how much of each color is present at each stage of the animation */
@@ -145,7 +145,7 @@ header {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 5px dashed darkgray;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
