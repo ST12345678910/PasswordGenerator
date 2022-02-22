@@ -8,4 +8,5 @@
 [Deployed Site](https://st12345678910.github.io/PasswordGenerator/)
  
 ![PasswordGenerator](Assets/demopic.png)
+![PasswordGenerator](Assets/demopic2.png)
 
