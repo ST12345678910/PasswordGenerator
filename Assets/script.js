@@ -5,6 +5,7 @@ let verChar;
 let verUpper;
 let verLower;
 let userOptions;
+let usedBefore;
 
 // The arrays from which the password will be created
 number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -128,11 +129,21 @@ function passwordGen() {
   return pg;
 }
 
-// puts the password into viewable text for the user
+// puts the password into viewable text for the user. Also console logs each password, and each password is saved to local storage. If the password is new, an x will be displayed after the question, if it has been generated before then a green check will appear.
+
+// keys are made using the local devices time, every password that is generated is stored in local data, then compared with the most recent generation.
 function userInput(pg) {
   document.getElementById("password").textContent = pg;
-
+  console.log(pg)
+  let key = Date.now();
+  localStorage.setItem(key, pg)
+  if (pg != localStorage.getItem.key) {
+    document.getElementById("used").innerHTML = '&#x274C;';
+} else {
+    document.getElementById("used").innerHTML = '&#x2705;';
 }
+}
+
 
 // lets the user press the button to copy the password
 let copy = document.querySelector("#select");
