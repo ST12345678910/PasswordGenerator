@@ -1,8 +1,12 @@
+/* applies to all components, makes them fit in the box */
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+/* maintains wrapper height (height of center box) at 100% */
 
 .wrapper {
   height: 100%;
@@ -10,12 +14,16 @@
   padding: 0;
 }
 
+/* specifies font, and the gradient for the background. The three colors below are cylced through, change the "4s" to adjust the speed of the color shift */
+
 body {
   font-family: sans-serif;
   background: linear-gradient(-90deg, orange, pink, rgb(112, 214, 112), aqua);
   background-size: 500% 500%;
   animation: gradient 4s ease-in-out infinite;
 }
+
+/* keyframes below specify how much of each color is present at each stage of the animation */
 
 @keyframes gradient {
   0% {
@@ -31,6 +39,8 @@ body {
   }
 }
 
+/* positions the center box, and aligns the text within it to center */
+
 .wrapper {
   padding-top: 30px;
   padding-left: 20px;
@@ -38,12 +48,16 @@ body {
   text-align: center;
 }
 
+/* adjusts the position, color, and center alignment of the the header "Password generator" */
+
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
   color: hsl(0, 100%, 98%);
 }
+
+/* card is where the new password, or placeholder for it are held, below specifies the color, position, and alignment */
 
 .card {
   background-color: hsl(0, 0%, 100%);
@@ -66,6 +80,7 @@ header {
 
 }
 
+/* "generate password" button, red button */
 
 .btn {
   border: solid darkblue 5px;
@@ -82,6 +97,8 @@ header {
 
 }
 
+/* "highlight/select all" button, grey button */
+
 .btn1 {
   border: solid darkblue 5px;
   background-color: gray;
@@ -97,6 +114,8 @@ header {
 
 }
 
+/* both buttons will become yellow with red border when they are hover over */
+
 .btn:hover {
   background-color: yellow;
   color: hsl(0, 0%, 0%);
@@ -109,10 +128,7 @@ header {
   border: solid red 5px;
 }
 
-
-.float-right {
-  float: right;
-}
+/* positions and creates a box around where the password will be generated, specified the style of the completed password/placeholder */
 
 #password {
   -webkit-appearance: none;
@@ -134,6 +150,8 @@ header {
   resize: none;
   overflow: hidden;
 }
+
+/* specifies the max sizes of buttons and fonts, to allow for mobile friendly use */
 
 @media (max-width: 690px) {
   .btn {
