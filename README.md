@@ -9,6 +9,10 @@
  the page, whether or not the password has been generated
  previously.
  
+ To access the console log/local storage in Chrome:
+ WINDOWS/LINUX: Shift + CTRL + J
+ MACOS: Option + ⌘ + J
+ 
  Disclaimer(s): 
  - Passwords are saved to local storage, so
  previously generated passwords will not be available
